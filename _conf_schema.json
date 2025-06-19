@@ -1,0 +1,14 @@
+{
+    "use_llm_check": {
+        "description": "是否启用LLM来二次确认承诺内容",
+        "type": "bool",
+        "default": true,
+        "hint": "禁用后，将只通过正则表达式进行简单判断和记录。"
+    },
+    "promise_keywords_regex": {
+        "description": "用于初步筛选承诺的正则表达式",
+        "type": "string",
+        "default": "我(保证|发誓|决定|一定)|(回头|明天|今晚|下周|周.).*?(要|做|完成)",
+        "hint": "用于快速过滤消息，命中后才会进行后续处理。"
+    }
+}
