@@ -40,7 +40,7 @@
 ## 🔧 安装与配置
 
 1.  **下载插件**: 从本仓库下载所有文件。
-2.  **放置插件**: 将整个 `astrabot_plugin_promise_keeper` 文件夹放入您 AstrBot 的 `data/plugins/` 目录下。
+2.  **放置插件**: 将整个 `astrbot_plugin_promise_keeper` 文件夹放入您 AstrBot 的 `data/plugins/` 目录下。
 3.  **安装依赖**: 确保 `requirements.txt` 文件位于插件目录中。AstrBot 在启动时会自动检测并安装所需的 `dateparser` 库。
 4.  **配置LLM (重要)**:
     - 重启 AstrBot，进入 Web 管理面板。
