@@ -1,0 +1,8 @@
+{
+    "llm_provider_id": {
+        "description": "用于批量分析承诺的LLM提供商的ID",
+        "type": "string",
+        "hint": "请填写你在AstrBot中配置的LLM Provider的唯一ID，例如 'my_openai_gpt4'。留空则禁用LLM分析功能。",
+        "default": ""
+    }
+}

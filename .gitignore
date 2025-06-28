@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+
+# VSCode
+.vscode/
+
+# 插件数据 (如果您的数据文件不希望公开)
+# promises.json 
+# temp_images/

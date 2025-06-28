@@ -1,0 +1,9 @@
+# 核心深度学习框架 (CPU版本，体积小，适合插件分发)
+torch --index-url https://download.pytorch.org/whl/cpu
+
+# Transformers 库，用于加载模型和分词器
+transformers
+
+# TinyBERT 分词器所需的额外依赖
+sentencepiece
+protobuf
