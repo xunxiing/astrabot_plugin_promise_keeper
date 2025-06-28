@@ -56,7 +56,7 @@ USER_PROMISES_TMPL = """
 DATA_DIR = os.path.join("data", "promise_keeper_ai")
 PROMISES_FILE = os.path.join(DATA_DIR, "promises.json")
 
-@register("PromiseKeeperAI", "YourName", "由AI驱动的承诺记录器", "2.1.1") # 修复LLM JSON解析
+@register("PromiseKeeperAI", "YourName", "由AI驱动的承诺记录器", "2.2.1") # 修复LLM JSON解析
 class PromiseKeeperPlugin(Star):
     def __init__(self, context: Context, config: AstrBotConfig):
         super().__init__(context)
@@ -143,7 +143,7 @@ class PromiseKeeperPlugin(Star):
         prediction = self.detector.predict(text=message_text, context=nn_context)
         logger.debug(f"言而有信[NN] 预判: '{message_text}' -> {prediction}")
         
-        if not (prediction["label_name"] == "Promise" and prediction["confidence"] > 0.8): return
+        if not (prediction["label_name"] == "Promise" and prediction["confidence"] > 0.85): return
 
         llm = self.context.get_using_provider()
         if not llm: logger.warning("言而有信[AI]: NN检测到可能承诺，但未找到可用LLM进行确认。"); return
